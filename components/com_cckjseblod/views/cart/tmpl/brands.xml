@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Brands">
+		<message>
+			<![CDATA[CONTENT ARTICLE USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Brand Listing</name>
+		<description>Brand add, edit and delete</description>
+	
+	</state>
+
+</metadata>

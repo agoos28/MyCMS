@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="checkout">
+		<message>
+			<![CDATA[CONTENT ARTICLE USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Articles. User's Articles List Layout ( jSeblod CCK )</name>
+		<description>CONTENT ARTICLE USER LIST LAYOUT</description>
+	
+	</state>
+
+</metadata>

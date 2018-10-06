@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template" version="1.5">
+
+	<name>default_blog</name>
+	<author>Octopoos</author>
+	<creationDate>November 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2012 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Default Blog Template (Auto) - SEBLOD 1.x</description>
+
+	<files>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>params.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/administrator.css</filename>
+		<filename>css/site.css</filename>
+		<filename>images/index.html</filename>
+	</files>
+
+	<positions>
+		<position />
+	</positions>
+
+	<params addpath="/administrator/components/com_cckjseblod/elements">
+		<param type="spacer" default="&lt;b&gt; ### Labels &amp; Tooltips&lt;/b&gt;" />
+		<param name="siteDisplayLabel" type="radio" default="1" label="Display Label" description="Display/Hide Label">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="siteLabelColor" type="colorpicker" default="" label="Label Color" description="Select Label Color" />
+		<param name="siteLabelSeparator" type="text" default=":" label="Label Separator" description="Edit Label Separator" />
+		<param name="siteDisplayTooltip" type="radio" default="1" label="Display Tooltip" description="Display/Hide Tooltip">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="siteTooltipIcon" type="list" default="" label="Tooltip Icon" description="Select Tooltip Icon">
+			<option value="balloon-default.png">Default</option>
+			<option value="balloon-exclamation.png">Exclamation</option>
+			<option value="balloon-information.png">Information</option>
+			<option value="balloon-question.png">Question</option>
+		</param>
+	</params>
+
+	<locations>
+		<location>DESCRIPTION</location>
+		<location>FOOTER</location>
+		<location>IMAGE</location>
+		<location>SUBTITLE1</location>
+		<location>SUBTITLE2</location>
+	</locations>
+
+</install>

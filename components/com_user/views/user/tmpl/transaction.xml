@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="USER TRANSACTION">
+		<message>
+			<![CDATA[USER FORM LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>USER TRANSACTION</name>
+		<description>USER TRANSACTION DESC</description>
+	</state>
+</metadata>

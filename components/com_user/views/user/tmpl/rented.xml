@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="USER RENTED ITEMS">
+		<message>
+			<![CDATA[USER LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>USER RENTED ITEMS</name>
+		<description>USER RENTED ITEMS DESC</description>
+	</state>
+</metadata>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User's Sections List Layout (Author)">
+		<message>
+			<![CDATA[CONTENT CATEGORY USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Categories. User's Categories List Layout ( jSeblod CCK )</name>
+		<description>CONTENT SECTIONS USER LIST LAYOUT</description>
+		<params addpath="/administrator/components/com_cckjseblod/elements">
+			<param name="secgroup" type="text" label="Section Group" description="Choose a section group" />
+			<param name="show_unpublished" type="radio" default="0" label="Show Unpublished" description="Show/Hide Unpublished Items">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			
+			<param type="spacer" default=" " />
+			<param name="auto_redirect" type="radio" default="0" label="Auto Redirection" description="Show Item Form Edition instead of Item List when only one item listed.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="enable_add" type="list" default="" label="Add Button" description="Show/Hide Add Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_publish" type="list" default="" label="Publish Button" description="Show/Hide Publish Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_unpublish" type="list" default="" label="Unpublish Button" description="Show/Hide Unpublish Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="enable_delete" type="list" default="" label="Delete Button" description="Show/Hide Delete Button">
+				<option value="">Hide</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+		</params>
+	</state>
+
+</metadata>

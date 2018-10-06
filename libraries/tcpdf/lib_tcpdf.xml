@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="library" version="2.5" method="upgrade">
+	<name>lib_tcpdf</name>
+	<libraryname>tcpdf</libraryname>
+	<version>5.9.193</version>
+	<creationDate>September 2012</creationDate>
+	<author>Nicola Asuni</author>
+	<authorUrl>www.tecnick.com</authorUrl>
+	<authorEmail>info@tecnick.com</authorEmail>
+	<copyright>(C) 2002-2012  Nicola Asuni - Tecnick.com LTD</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<packager>Attavus M.D. / R.A.S.Lab[.org]</packager>
+	<packagerurl>http://www.raslab.org</packagerurl>
+	<description><![CDATA[TCPDF library for Joomla!<br/>
+	  TCPDF is a PHP class for generating PDF files on-the-fly without requiring external extensions.<br/>
+	  Please note that R.A.S.Lab[.org] has only created an installation package, all credit belongs to Nicola Asuni (www.teknick.com)<br> This is a full version of original package.]]>
+	</description>
+	<files folder="tcpdf">
+		<folder>cache</folder>
+		<folder>config</folder>
+		<folder>doc</folder>
+		<folder>examples</folder>
+		<folder>fonts</folder>
+		<folder>images</folder>
+		<file>2dbarcodes.php</file>
+		<file>barcodes.php</file>
+		<file>CHANGELOG.TXT</file>
+		<file>composer.json</file>
+		<file>datamatrix.php</file>
+		<file>encodings_maps.php</file>
+		<file>htmlcolors.php</file>
+		<file>index.html</file>
+		<file>LICENSE.TXT</file>
+		<file>pdf417.php</file>
+		<file>qrcode.php</file>
+		<file>README.TXT</file>
+		<file>spotcolors.php</file>
+		<file>sRGB.icc</file>
+		<file>tcpdf_filters.php</file>
+		<file>tcpdf_parser.php</file>
+		<file>tcpdf.crt</file>
+		<file>tcpdf.fdf</file>
+		<file>tcpdf.p12</file>
+		<file>tcpdf.php</file>
+		<file>unicode_data.php</file>
+	</files>
+</extension>

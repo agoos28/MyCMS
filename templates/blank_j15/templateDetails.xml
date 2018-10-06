@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>blank_j15</name>
+	<creationDate>March 24, 2008</creationDate>
+	<author>Cory Webb</author>
+	<authorEmail>cory@corywebbmedia.com</authorEmail>
+	<authorUrl>http://www.corywebbmedia.com</authorUrl>
+	<copyright></copyright>
+	<license></license>
+	<version>1.0.0</version>
+	<description>Blank Joomla 1.5 Template</description>
+	<files>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+	</files>
+	<positions>
+		<position>slider-admin</position>
+		<position>prodmenu</position>
+		<position>prodmenu2</position>
+		<position>catmenu</position>
+		<position>catmenumobile</position>
+		<position>contact</position>	
+		<position>home</position>	
+		<position>mainmenu</position>
+		<position>menu-bottom</position>
+		<position>blog-top</position>
+		<position>cart</position>
+		<position>login</position>
+		<position>lang_sel</position>
+		<position>search</position>
+		<position>topfull</position>
+		<position>top</position>
+		<position>maintop</position>
+		<position>mainleft</position>
+		<position>mainbottom</position>
+		<position>mainbottomfull</position>
+		<position>bottom</position>
+		<position>newsletter</position>
+		<position>footertop</position>
+		<position>fot_ab</position>
+		<position>footermid</position>
+		<position>promo</position>
+		<position>popup</position>
+		<position>adminmap</position>
+		<position>footerfull</position>
+	</positions>
+	<params>
+	</params>
+</install>

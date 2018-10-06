@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="shipping">
+		<message>
+			<![CDATA[CONTENT ARTICLE USER LIST LAYOUT]]>
+		</message>
+	</layout>
+	<state>
+		<name>Articles. User's Articles List Layout ( jSeblod CCK )</name>
+		<description>CONTENT ARTICLE USER LIST LAYOUT</description>
+		<params>
+			<param name="area" type="radio" default="0" label="Area" description="">
+				<option value="0">Regional</option>
+				<option value="1">International</option>
+			</param>
+		</params>
+	</state>
+	
+</metadata>

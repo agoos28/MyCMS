@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>Cart</name>
+	<author>agoos28</author>
+	<creationDate>12 may 2013</creationDate>
+	<copyright>bebas</copyright>
+	<license>bebas</license>
+	<authorEmail>agus_riyanto_28@yahoo.com</authorEmail>
+	<authorUrl>http://kreatifkorner.com</authorUrl>
+	<version>1.0</version>
+	<description>desc</description>
+
+	<files>
+		<filename module="mod_cart">mod_cart.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_cart.ini</language>
+	</languages>
+
+	<params>
+		<param name="param1" type="text" label="Demo Param 1" default="Param 1" description="Description for parameter 1" />
+		<param name="param2" type="text" label="Demo Param 2" default="Param 2" description="Description for parameter 2" />
+		<param name="param3" type="radio" label="Demo Param 3" default="1" description="Description for parameter 3">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+</install>

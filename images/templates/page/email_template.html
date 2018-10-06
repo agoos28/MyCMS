@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>email_template.html</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div class="mceTmpl"><table class="table" style="margin-left: auto; margin-right: auto; width: 722px; height: 653px;" cellpadding="0">
+<tbody>
+<tr class="text-bold text-w-500">
+<td colspan="3" style="text-align: center; vertical-align: middle;">
+<div><img src="images/logo.png" alt="logo" width="202" height="124" />&nbsp;</div>
+<h1><span style="font-size: 24px; color: #ed117d;">Pesanan Anda telah kami terima!</span></h1>
+</td>
+</tr>
+<tr>
+<td style="width: 5%;">&nbsp;</td>
+<td style="text-align: center; vertical-align: middle;">
+<p><strong><span style="font-size: 18px;">ORDER ID #{order_number}</span></strong></p>
+<p><span style="font-size: 12px;">Berikut rincian pesanan anda:</span></p>
+</td>
+<td style="width: 5%;">&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>{product}</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p style="line-height: 22px;"><span style="font-size: 12px;">Total yang harus anda transfer adalah <strong>Rp {total_price}</strong> ,anda bisa melakukan pembayaran melalui bank transfer ke rekening berikut:</span></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<table class="table table-bordered" style="width: 100%; border: 1px solid #c7c7c7;" cellspacing="0" cellpadding="0" border="1">
+<tbody>
+<tr>
+<td style="color: #ffffff; background: #7ec6bd url('none') repeat scroll 0% 0%; text-align: center;"><span style="font-size: 10px;">Bank</span></td>
+<td style="color: #ffffff; background: #7ec6bd url('none') repeat scroll 0% 0%; text-align: center;"><span style="font-size: 10px;">Nomor Rekening</span></td>
+<td style="color: #ffffff; background: #7ec6bd url('none') repeat scroll 0% 0%; text-align: center;"><span style="font-size: 10px;">Atas Nama</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">BCA</td>
+<td style="text-align: center;"><strong>345-014-7426</strong></td>
+<td style="text-align: center;">Annisa Oktantiani</td>
+</tr>
+<tr>
+<td style="text-align: center;">MANDIRI</td>
+<td style="text-align: center;"><strong>157-000-541-3365</strong></td>
+<td style="text-align: center;">Trie Utari</td>
+</tr>
+</tbody>
+</table>
+<span style="font-size: 12px;">Jika telah melakukan pembayaran, lakukan konfirmasi melalui link berikut</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><a href="{confirm_link}"><img src="images/confir-button.png" alt="confir button" width="212" height="38" /></a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+<p><span style="font-size: 12px;">Terima kasih,<br />Toiss.id - Tempat Penyewaan Kebutuhan Bayi &amp; Anak.<br /></span></p>
+<p><span style="font-size: 12px;">Contact us: <span style="font-size: 12px; color: #00ccff;"><a href="mailto:purchase@toiss.id" style="color: #00ccff;">purchase@<span style="font-size: 12px;">toiss.id</span></a> </span></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">{pdf_button}</p>
+<p style="text-align: center;"><span style="font-size: 12px;">&nbsp;Untuk melihat histori transaksi anda, silahkan login pada <span style="color: #00ccff;"><a href="user" target="_blank" title="Member Area" style="color: #00ccff;">area member</a></span> kami.</span></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+</html>

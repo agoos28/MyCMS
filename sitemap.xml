@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://toiss.id/</loc>
+  <lastmod>2017-11-09T07:20:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product</loc>
+  <lastmod>2017-11-09T07:20:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/78-bouncer-a-swing</loc>
+  <lastmod>2017-11-09T07:20:21+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/88-its-play-time</loc>
+  <lastmod>2017-11-09T07:20:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/89-travelling</loc>
+  <lastmod>2017-11-09T07:20:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/90-meal-time</loc>
+  <lastmod>2017-11-09T07:20:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/91-nursery</loc>
+  <lastmod>2017-11-09T07:20:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/92-walker</loc>
+  <lastmod>2017-11-09T07:20:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/product/103-moms-stuff</loc>
+  <lastmod>2017-11-09T07:20:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/shipping-information</loc>
+  <lastmod>2017-11-09T07:20:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/about</loc>
+  <lastmod>2017-11-09T07:20:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toiss.id/contact</loc>
+  <lastmod>2017-11-09T07:20:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Newsflash jSeblod</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2006</creationDate>
+	<copyright>Copyright (C) 2009 jSeblod and Open Source Matter. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>team@jseblod.com</authorEmail>
+	<authorUrl>www.jseblod.com</authorUrl>
+	<version>1.5.1</version>
+	<description>jSeblod NewsFlash with Joomla plugin process</description>
+	<files>
+		<filename module="mod_newsflash_jseblod">mod_newsflash_jseblod.php</filename>
+		<filename module="mod_newsflash_jseblod">mod_newsflash_jseblod.xml</filename>
+		<filename module="mod_newsflash_jseblod">helper.php</filename>
+		<filename module="mod_newsflash_jseblod">tmpl/default.php</filename>
+		<filename module="mod_newsflash_jseblod">tmpl/horiz.php</filename>
+		<filename module="mod_newsflash_jseblod">tmpl/vert.php</filename>
+		<filename module="mod_newsflash_jseblod">tmpl/_item.php</filename>
+	</files>
+	<params>
+		<param name="modtitle" type="text" default="" label="Title" description="A title" />
+		<param name="secid" type="section" default="0" label="Section" description="A content section" />
+		<param name="catid" type="category" default="0" label="Category" description="A content category" />
+		<param name="descid" type="text" default="" label="Deascription ID" description="A content ID" />
+		<param name="custom_link" type="text" default="" label="Custom link" description="custom_link" />
+		<param name="cid" type="sql" default="0" label="Select an article" query="SELECT id, title FROM #__content" key_field="id" value_field="title" />
+		<param name="layout" type="list" default="single" label="Layout" description="The layout to display the category">
+			<option value="default">default</option>
+			<option value="carousel">carousel</option>
+			<option value="slidebanner">slidebanner</option>
+			<option value="blogslide">blogslide</option>
+			<option value="homeslide">Homeslide</option>
+			<option value="single">single</option>
+			<option value="popup">popup</option>
+			<option value="fpb">Full Page Banner</option>
+			<option value="catthumb">Category Thumnail</option>
+			<option value="catmenu">catmenu</option>
+			<option value="categories">categories</option>
+			<option value="gmap">gmap</option>
+			<option value="cartadd">Cart Add</option>
+		</param>
+		<param name="ordering" type="list" default="a.ordering" label="Ordering" description="The ordering">
+			<option value="a.ordering ASC">By Order</option>
+			<option value="a.created DESC">By Recent first</option>
+			<option value="a.hits DESC">By hits</option>
+			<option value="a.buycount DESC">By best seller</option>
+			<option value="RAND()">Random</option>
+		</param>
+		<param name="selection" type="list" default="" label="Selection" description="Selection">
+			<option value="">All</option>
+			<option value="a.staf_pick">Home Page Item</option>
+		</param>
+		<param name="jSeblod_template" type="text" default="" label="jSeblod CCK template name" description="Write jSeblod CCK template name." />
+		<param name="jSeblod_run_plugin" type="list" default="1" label="Run plugin" description="Select yes or not.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	  	</param>
+		<param name="image" type="radio" default="0" label="Show images" description="Display Article images">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Linked Titles" description="Make the Item titles linkable">
+			<option value="">Use Global</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showLastSeparator" type="radio" default="1" label="Show last separator" description="Show separator after last article">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="readmore" type="radio" default="0" label="Read More" description="Show/Hide the Read More button">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="item_title" type="list" default="0" label="Article Title" description="Show article title">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="items" type="text" default="" label="No. of Items" description="No of items to display" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

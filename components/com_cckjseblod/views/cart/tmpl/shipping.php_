@@ -1,0 +1,149 @@
+<?php
+/* Copyright (C) 2012 SEBLOD. All Rights Reserved. */
+
+// No Direct Access
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+function CariKata($s, $keyword1, $keyword2) {
+  $l1=strlen($keyword1);
+  $x1=strpos($s, $keyword1);
+  $x2=strpos($s, $keyword2, $x1+$l1);
+  $l=$x2-($x1+$l1);
+  return substr($s, $x1+$l1, $l);
+}
+function getCookie(){
+	
+	// mengambil data awal tiki online, gunanya untuk mengambil cookie di header page si TIKI          
+	  $url_1 = "http://www.tiki-online.com/";
+	  $c = curl_init();
+	curl_setopt($c, CURLOPT_AUTOREFERER, 1);
+	curl_setopt($c, CURLOPT_HTTPGET, 1);
+	curl_setopt($c, CURLINFO_HEADER_OUT,1);
+	curl_setopt($c, CURLOPT_VERBOSE, 1);
+	curl_setopt($c, CURLOPT_HEADER, 1);
+	curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($c, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
+	curl_setopt($c, CURLOPT_URL, $url_1);
+	$hasil_1 = curl_exec($c);
+	curl_close($c);
+	$cookie = CariKata($hasil_1,'PHPSESSID=',';');
+	$session =& JFactory::getSession();
+	$session->set('tiki', $cookie);
+	return $cookie;
+}
+function getName($keyword = null){
+	$url = "http://www.tiki-online.com/lib/cariori.php?q=".$keyword."&limit=10";
+	$session =& JFactory::getSession();
+	$cookie = $session->get('tiki');
+	if(!$cookie){
+		$cookie = getCookie();
+	}
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_HEADER, false);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt($ch, CURLOPT_COOKIE, "PHPSESSID=$cookie;");
+	curl_setopt($ch, CURLOPT_POST, 1);
+	$destlist = curl_exec($ch);
+	curl_close($ch);
+	$destlist = preg_split('/[\r\n]+/', $destlist);
+	return '{"query": "Unit","suggestions": '.json_encode($destlist).'}';
+	return $destlist;
+}
+function getCost($keyword = null){
+	$url = "http://www.tiki-online.com/?cat=KgfdshfF7788KHfskF"; // url ini selalu statik, tapi mungkin berubah, jadi mesti dihandel.
+	
+	$postdata = array(
+		  "get_des" => "JAKARTA",
+		  "get_ori" => $keyword,
+		  "get_wg" => 1,
+		  "submit" => "Check"
+	  );
+	
+	$session =& JFactory::getSession();
+	$cookie = $session->get('tiki');
+	if(!$cookie){
+		$cookie = getCookie();
+	}
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_HEADER, false);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt($ch, CURLOPT_COOKIE, "PHPSESSID=$cookie;");
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+	$raw = curl_exec($ch);
+	curl_close($ch);
+ 	return (string)$raw;
+}
+function stripdata($raw){
+	$dom = new DomDocument();
+	@$dom->loadHTML($raw);
+	$fetch =  $dom->getElementsByTagName('table');
+	$table = $fetch->item(2);
+	if($table){
+		$row = $table->getElementsByTagName('tr');
+		foreach($row as $val){
+			if ($no!=0){
+				$field = $row->item($no)->getElementsByTagName('td');
+				$harga = str_replace(',','',$field->item(1)->nodeValue);
+				$costs[] = (object)array(
+					'service' => $field->item(0)->nodeValue,
+					'harga' => $harga
+				);
+			}
+			$no++;
+		}
+		return $costs;
+	}else{
+		return false;
+	}
+	
+}
+
+
+$request = (object)JRequest::get('default');
+$select = $request->select;
+$getcost = $request->getcost;
+
+if($request->query){
+	if( !function_exists("curl_init") ) {
+	  die("curl nya blom di aktifin ato di install");
+	} else {
+		$names = getName($request->query);
+		echo $names;die();
+	}
+}
+if($request->getcost){
+	if( !function_exists("curl_init") ) {
+	  die("curl nya blom di aktifin ato di install");
+	} else {
+		$raw = getCost($request->getcost);
+		$costs = stripdata($raw);
+		if(!$costs){
+			echo '<select name="service"><option value="87500||- Berlaku harga tertinggi." selected="selected">-  Berlaku harga tertinggi (87.500)</option></select>';die();
+		}
+		$session =& JFactory::getSession();
+		$session->set('costs', json_encode($costs));
+		$count = count($costs);
+		$s = 0;
+		$html = '<select name="service">';
+		foreach($costs as $cost){
+			$s++;
+			if($count == $s){
+				$html .= '<option selected="selected" value="'.$cost->harga.'||'.$cost->service.'">'.$cost->service.' ('.number_format($cost->harga, 0, '', '.').')</option>';
+			}else{
+				$html .= '<option value="'.$cost->harga.'||'.$cost->service.'">'.$cost->service.' ('.number_format($cost->harga, 0, '', '.').')</option>';
+			}
+		}
+		$html .= '</select>';
+		echo $html;die();
+	}
+}
+?>
+
+

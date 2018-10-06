@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Product Show</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2006</creationDate>
+	<copyright>Copyright (C) 2009 jSeblod and Open Source Matter. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>team@jseblod.com</authorEmail>
+	<authorUrl>www.jseblod.com</authorUrl>
+	<version>1.5.1</version>
+	<description>Home product Show</description>
+	<files>
+		<filename module="mod_homewrap">mod_homewrap.php</filename>
+		<filename module="mod_homewrap">mod_homewrap.xml</filename>
+		<filename module="mod_homewrap">helper.php</filename>
+		<filename module="mod_homewrap">tmpl/default.php</filename>
+		<filename module="mod_homewrap">tmpl/horiz.php</filename>
+		<filename module="mod_homewrap">tmpl/vert.php</filename>
+		<filename module="mod_homewrap">tmpl/_item.php</filename>
+	</files>
+	<params>
+		<param name="modtitle" type="text" default="" label="Title" description="A title" />
+		<param name="descid" type="text" default="" label="Deascription ID" description="A content ID" />
+		<param name="custom_link" type="text" default="" label="Custom link" description="custom_link" />
+		<param name="layout" type="list" default="newest" label="Layout" description="The layout to display the category">
+			<option value="newest">newest</option>
+			<option value="seller">seller</option>
+			<option value="popular">popular</option>
+			<option value="pick">pick</option>
+		</param>
+		<param name="items" type="text" default="" label="No. of Items" description="No of items to display" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

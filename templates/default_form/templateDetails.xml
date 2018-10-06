@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template" version="1.5">
+
+	<name>default_form</name>
+	<author>Octopoos</author>
+	<creationDate>November 2009</creationDate>
+	<authorEmail>contact@seblod.com</authorEmail>
+	<authorUrl>http://www.seblod.com</authorUrl>
+	<copyright>Copyright (C) 2012 SEBLOD. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>1.8.5</version>
+	<description>Default Form Template (Auto) - SEBLOD 1.x</description>
+
+	<files>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>params.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/administrator.css</filename>
+		<filename>css/site.css</filename>
+		<filename>images/index.html</filename>
+		<filename>images/balloon-default.png</filename>
+		<filename>images/balloon-exclamation.png</filename>
+		<filename>images/balloon-information.png</filename>
+		<filename>images/balloon-question.png</filename>
+	</files>
+
+	<positions>
+		<position />
+	</positions>
+
+	<params addpath="/administrator/components/com_cckjseblod/elements">
+		<param type="spacer" default="&lt;b&gt;###################### &lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt;# SITE FORM PARAMS&lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt;###################### &lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt; ### Form Basics&lt;/b&gt;" />
+		<param name="siteBackgroundColor" type="colorpicker" default="" label="Background Color" description="Select Background Color" />
+		<param name="siteBorderColor" type="colorpicker" default="" label="Border Color" description="Select Border Color" />
+		<param name="siteBorderStyle" type="list" default="" label="Border Style" description="Select Border Style">
+			<option value="">Default</option>
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param type="spacer" default="&lt;b&gt; ### Form Titles&lt;/b&gt;" />
+		<param name="siteShowTitle" type="radio" default="1" label="Show Title" description="Show or Hide Title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="siteTitleColor" type="colorpicker" default="" label="Title Color" description="Select Title Color" />
+		<param name="siteTitleStyle" type="list" default="" label="Title Style" description="Select Title Style">
+			<option value="">Default</option>
+			<option value="italic">Italic</option>
+			<option value="normal">Normal</option>
+			<option value="oblique">Oblique</option>
+		</param>
+		<param name="siteTitleWeight" type="list" default="" label="Title Weight" description="Select Title Weight">
+			<option value="">Default</option>
+			<option value="bold">Bold</option>
+			<option value="normal">Normal</option>
+		</param>
+		<param name="siteTitleBorderS" type="list" default="solid" label="Title Border Style" description="Select Title Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="siteTitleBorderC" type="colorpicker" default="#C0C0C0" label="Title Border Color" description="Select Title Border Color" />
+		<param type="spacer" default="&lt;b&gt; ### Panels Titles&lt;/b&gt;" />
+		<param name="sitePanelColor" type="colorpicker" default="" label="Panel Title Color" description="Select Panel Title Color" />
+		<param name="sitePanelStyle" type="list" default="" label="Panel Title Style" description="Select Panel Title Style">
+			<option value="">Default</option>
+			<option value="italic">Italic</option>
+			<option value="normal">Normal</option>
+			<option value="oblique">Oblique</option>
+		</param>
+		<param name="sitePanelWeight" type="list" default="" label="Panel Title Weight" description="Select Panel Title Weight">
+			<option value="">Default</option>
+			<option value="bold">Bold</option>
+			<option value="normal">Normal</option>
+		</param>
+		<param name="sitePanelBorderS" type="list" default="none" label="Panel Title Border Style" description="Select Panel Title Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="sitePanelBorderC" type="colorpicker" default="" label="Panel Title Border Color" description="Select Panel Title Border Color" />
+		<param type="spacer" default="&lt;b&gt; ### Labels &amp; Tooltips&lt;/b&gt;" />
+		<param name="siteDisplayLabel" type="radio" default="1" label="Display Label" description="Display/Hide Label">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Yes (Javascript)</option>
+		</param>
+		<param name="siteLabelColor" type="colorpicker" default="" label="Label Color" description="Select Label Color" />
+		<param name="siteLabelSeparator" type="text" default=":" label="Label Separator" description="Edit Label Separator" />
+		<param name="siteTooltipIcon" type="list" default="" label="Tooltip Icon" description="Select Tooltip Icon">
+			<option value="balloon-default.png">Default</option>
+			<option value="balloon-exclamation.png">Exclamation</option>
+			<option value="balloon-information.png">Information</option>
+			<option value="balloon-question.png">Question</option>
+		</param>
+		<param type="spacer" default="&lt;b&gt; ### Fields &amp; Validations&lt;/b&gt;" />
+		<param name="siteAnimatedPanels" type="radio" default="1" label="Animated Panels" description="Enable or Disable Animated Panels">
+			<option value="0">No (H3)</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="siteRequiredColor" type="colorpicker" default="#ffffdd" label="Required Color" description="Select Required Color" />
+		<param name="siteRequiredBorderS" type="list" default="solid" label="Required Border Style" description="Select Required Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="siteRequiredBorderC" type="colorpicker" default="#ffd700" label="Required Border Color" description="Select Required Border Color" />
+		<param name="siteSuccessColor" type="colorpicker" default="" label="Success Color" description="Select Validation Success Color" />
+		<param name="siteSuccessBorderS" type="list" default="solid" label="Success Border Style" description="Select Validation Success Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="siteSuccessBorderC" type="colorpicker" default="#00cc00" label="Success Border Color" description="Select Validation Success Border Color" />
+		<param name="siteFailureColor" type="colorpicker" default="" label="Failure Color" description="Select Validation Failure Color" />
+		<param name="siteFailureBorderS" type="list" default="solid" label="Failure Border Style" description="Select Validation Failure Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="siteFailureBorderC" type="colorpicker" default="#cc0000" label="Failure Border Color" description="Select Validation Failure Border Color" />
+		<param name="siteAlertColor" type="colorpicker" default="" label="Alert Color" description="Select Validation Alert Color" />
+		<param name="siteButtonTextColor" type="colorpicker" default="#ffffff" label="Button Text Color" description="Select Button Text Color" />
+		<param name="siteButtonBackColor" type="colorpicker" default="#6cc634" label="Button Background Color" description="Select Button Background Color" />
+		<param name="siteButtonBorderColor" type="colorpicker" default="#6cc634" label="Button Border Color" description="Select Button Border Color" />
+		<param type="spacer" default=" " />
+		<param type="spacer" default="&lt;b&gt;###################### &lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt;# ADMIN FORM PARAMS&lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt;###################### &lt;/b&gt;" />
+		<param type="spacer" default="&lt;b&gt; ### Form Basics&lt;/b&gt;" />
+		<param name="adminBackgroundColor" type="colorpicker" default="" label="Background Color" description="Select Background Color" />
+		<param name="adminBorderColor" type="colorpicker" default="" label="Border Color" description="Select Border Color" />
+		<param name="adminBorderStyle" type="list" default="" label="Border Style" description="Select Border Style">
+			<option value="">Default</option>
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param type="spacer" default="&lt;b&gt; ### Form Titles&lt;/b&gt;" />
+		<param name="adminShowTitle" type="radio" default="1" label="Show Title" description="Show or Hide Title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="adminTitleColor" type="colorpicker" default="" label="Title Color" description="Select Title Title Color" />
+		<param name="adminTitleStyle" type="list" default="" label="Title Style" description="Select Title Style">
+			<option value="">Default</option>
+			<option value="italic">Italic</option>
+			<option value="normal">Normal</option>
+			<option value="oblique">Oblique</option>
+		</param>
+		<param name="adminTitleWeight" type="list" default="" label="Title Weight" description="Select Title Weight">
+			<option value="">Default</option>
+			<option value="bold">Bold</option>
+			<option value="normal">Normal</option>
+		</param>
+		<param name="adminTitleBorderS" type="list" default="solid" label="Title Border Style" description="Select Title Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="adminTitleBorderC" type="colorpicker" default="#c0c0c0" label="Title Border Color" description="Select Title Border Color" />
+		<param type="spacer" default="&lt;b&gt; ### Panels Titles&lt;/b&gt;" />
+		<param name="adminPanelColor" type="colorpicker" default="" label="Panel Title Color" description="Select Panel Title Color" />
+		<param name="adminPanelStyle" type="list" default="" label="Panel Title Style" description="Select Panel Title Style">
+			<option value="">Default</option>
+			<option value="italic">Italic</option>
+			<option value="normal">Normal</option>
+			<option value="oblique">Oblique</option>
+		</param>
+		<param name="adminPanelWeight" type="list" default="" label="Panel Title Weight" description="Select Panel Title Weight">
+			<option value="">Default</option>
+			<option value="bold">Bold</option>
+			<option value="normal">Normal</option>
+		</param>
+		<param name="adminPanelBorderS" type="list" default="none" label="Panel Title Border Style" description="Select Panel Title Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="adminPanelBorderC" type="colorpicker" default="" label="Panel Title Border Color" description="Select Panel Title Border Color" />
+		<param type="spacer" default="&lt;b&gt; ### Labels &amp; Tooltips&lt;/b&gt;" />
+		<param name="adminDisplayLabel" type="radio" default="1" label="Display Label" description="Display/Hide Label">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Yes (Javascript)</option>
+		</param>
+		<param name="adminLabelColor" type="colorpicker" default="" label="Label Color" description="Select Label Color" />
+		<param name="adminLabelSeparator" type="text" default=":" label="Label Separator" description="Edit Label Separator" />
+		<param name="adminTooltipIcon" type="list" default="" label="Tooltip Icon" description="Select Tooltip Icon">
+			<option value="balloon-default.png">Default</option>
+			<option value="balloon-exclamation.png">Exclamation</option>
+			<option value="balloon-information.png">Information</option>
+			<option value="balloon-question.png">Question</option>
+		</param>
+		<param type="spacer" default="&lt;b&gt; ### Fields &amp; Validations&lt;/b&gt;" />
+		<param name="adminAnimatedPanels" type="radio" default="1" label="Animated Panels" description="Enable or Disable Animated Panels">
+			<option value="0">No (H3)</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="adminRequiredColor" type="colorpicker" default="#ffffdd" label="Required Color" description="Select Required Color" />
+		<param name="adminRequiredBorderS" type="list" default="solid" label="Required Border Style" description="Select Required Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="adminRequiredBorderC" type="colorpicker" default="#ffd700" label="Required Border Color" description="Select Required Border Color" />
+		<param name="adminSuccessColor" type="colorpicker" default="" label="Success Color" description="Select Validation Success Color" />
+		<param name="adminSuccessBorderS" type="list" default="solid" label="Success Border Style" description="Select Validation Success Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="adminSuccessBorderC" type="colorpicker" default="#00cc00" label="Success Border Color" description="Select Validation Success Border Color">
+		</param>
+		<param name="adminFailureColor" type="colorpicker" default="" label="Failure Color" description="Select Validation Failure Color" />
+		<param name="adminFailureBorderS" type="list" default="solid" label="Failure Border Style" description="Select Validation Failure Border Style">
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+			<option value="none">None</option>
+			<option value="solid">Solid</option>
+		</param>
+		<param name="adminFailureBorderC" type="colorpicker" default="#cc0000" label="Failure Border Color" description="Select Validation Failure Border Color" />
+		<param name="adminAlertColor" type="colorpicker" default="" label="Alert Color" description="Select Validation Alert Color" />
+	</params>
+	<locations />
+
+</install>

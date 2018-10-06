@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="validate">
+	</layout>
+	<state>
+		<name>Validate Promo Code</name>
+		<description>Validate Promo Code</description>
+		<params>
+			
+		</params>
+	</state>
+	
+</metadata>

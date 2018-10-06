@@ -1,0 +1,26 @@
+/**
+* @author       	http://www.seblod.com
+* @copyright		Copyright (C) 2012 SEBLOD. All Rights Reserved.
+* @package			SEBLOD 1.x (CCK for Joomla!)
+**/
+
+/**
+ * Class Label / Field
+ **/
+
+label.cck_label {
+}
+
+td.cck_field {
+	vertical-align: middle;
+	padding-bottom: 4px;
+}
+
+td.cck_field input[type="text"] {
+	width: 151px;
+}
+
+/**
+ * Fix
+ **/
+form div { margin: 0em 0 0em 0 !important; }

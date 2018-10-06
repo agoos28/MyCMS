@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>admin</name>
+	<version>1.0.0</version>
+	<creationDate>12/26/16</creationDate>
+	<author>agoos28</author>
+	<authorEmail>agoos28@gmail.com</authorEmail>
+	<authorUrl>http://behance.net/agoos28</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL version 2</license>
+	<description>Front administrations</description>
+	<positions>
+		<position>main-navigation-menu</position>
+		<position>breadcrumbs</position>
+		<position>main-navbar</position>
+		<position>banner</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>footer</position>
+		<position>syndicate</position>
+		<position>debug</position>
+	</positions>
+	<params>
+		<param type="spacer" default="Template Logo" />
+		<param name="logoType" type="list" default="image" label="Logo type" description="LOGO TYPE DESCRIPTION">
+			<option value="image">Image</option>
+			<option value="text">Text</option>
+		</param>
+		<param name="logoText" type="text" default="" size="50" label="Logo text" description="LOGO TEXT DESCRIPTION" />
+		<param name="sloganText" type="text" default="" size="50" label="Slogan" description="SLOGAN DESCRIPTION" />
+
+		<param type="spacer" default="Horizontal Navigation" />		
+		<param name="horNavType" type="list" default="moo" label="Horizontal Navigation Type" description="Suckerfish menu or JAMoo menu">
+			<option value="moo">JAMoo Menu</option>
+			<option value="css">Suckerfish Menu</option>
+		</param>
+		
+
+		<param type="spacer" default="Template Font Size" />
+		<param name="ja_font" type="list" default="3" label="Font size" description="FONT SIZE DESCRIPTION">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</param>
+		
+		<param type="spacer" default="Template_Width" />
+		<param name="ja_screen" type="list" default="950" label="Template Width" description="TEMPLATE WIDTH DESCRIPTION">
+			<option value="auto">AUTO</option>
+			<option value="750">Narrow Screen</option>
+			<option value="950">Wide Screen</option>
+			<option value="fluid">SPECIFIED PERCENTAGE</option>
+			<option value="fix">SPECIFIED PIXEL</option>
+		</param>		
+		<param name="ja_screen_width" type="text" default="" label="Specified width" description="SPECIFIED WIDTH DESCRIPTION" />
+		
+		<param type="spacer" default="Template Styles" />
+		<param name="theme_header" type="folderlist" directory="templates/ja_purity/styles/header" default="" label="Header Themes" description="HEADER THEMES DESCRIPTION" />
+		<param name="theme_background" type="folderlist" directory="templates/ja_purity/styles/background" default="" label="Background Themes" description="BACKGROUND THEMES DESCRIPTION" />
+		<param name="theme_elements" type="folderlist" directory="templates/ja_purity/styles/elements" default="" label="Primary Elements" description="PRIMARY ELEMENTS DESCRIPTION" />
+		
+		<param type="spacer" default="Right modules" />
+		<param name="rightCollapsible" type="radio" default="1" label="Right modules collapsible function" description="RIGHT MODULES COLLAPSIBLE FUNCTION DESCRIPTION">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</param>
+		<param name="rightCollapseDefault" type="radio" default="show" label="Default status" description="DEFAULT STATUS DESCRIPTION">
+			<option value="show">Expand All</option>
+			<option value="hide">Collapse All</option>
+		</param>
+		<param name="excludeModules" type="text" default="38" size="50" label="Exclude Modules" description="EXCLUDE MODULES DESCRIPTION" />
+		
+	</params>
+</install>

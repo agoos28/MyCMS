@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="Payment Confirmation">
+<message>
+
+</message>
+</layout>
+<state>
+<name>Buy Confirmation</name>
+<description>Buy Confirmation</description>
+<params>
+<param name="thankyoupage" type="text" default="" label="Thankyou Page ID" description="Thankyou Page ID" />
+<param name="adminmailorder" type="text" default="" label="Admin mail order page ID" description="Admin mail order page ID" />
+<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image" description="PARAMIMAGE" />
+<param name="image_align" type="radio" default="right" label="Image Align" description="Alignment of the image">
+<option value="left">Left</option>
+<option value="right">Right</option>
+</param>
+<param name="show_feed_link" type="radio" default="1" label="Show a feed link" description="PARAMSHOWFEEDLINK">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</param>
+</params>
+</state>
+</metadata>

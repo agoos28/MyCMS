@@ -1,0 +1,27 @@
+
+
+/* Fonts css */
+@import url('https://fonts.googleapis.com/css?family=Chewy|Fredoka+One|Margarine|Roboto:400,500|Sniglet');
+@import "font-awesome.min.css";
+
+/* Basic css */
+@import "bootstrap.css";
+@import "jquery.bxslider.css";
+
+/* Additional css */
+@import "yamm.css";
+@import "jquery-ui.css";
+@import "jquery.ui.slider.css";
+@import "flexslider.css";
+@import "jquery.selectbox.css";
+@import "icheckbox.css";
+@import "jquery.mmenu.css";
+@import "select2.css";
+@import "jquery.datetimepicker.css";
+
+/* Page Design css */
+@import "style.css";
+@import "kidzy.css";
+@import "utilities.css";
+@import "responsive.css?rev=1";
+

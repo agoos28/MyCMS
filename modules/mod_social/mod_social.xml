@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" client="site" method="upgrade">
+	<name>mod_social</name>
+	<author>agoos28</author>
+	<creationDate>12 may 2013</creationDate>
+	<copyright>bebas</copyright>
+	<license>bebas</license>
+	<authorEmail>agus_riyanto_28@yahoo.com</authorEmail>
+	<authorUrl>http://kreatifkorner.com</authorUrl>
+	<version>1.0</version>
+	<description>desc</description>
+
+	<files>
+		<filename module="mod_social">mod_social.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_social.ini</language>
+	</languages>
+
+	<params>
+		<param name="mode" type="radio" label="Demo Param 3" default="1" description="Description for parameter 3">
+			<option value="0">Mode How we Style</option>
+			<option value="1">Mode Homepage</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
